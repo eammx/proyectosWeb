@@ -1,0 +1,4 @@
+services:
+#    ernestoalumnos.example:
+#        class: ernesto\alumnosBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

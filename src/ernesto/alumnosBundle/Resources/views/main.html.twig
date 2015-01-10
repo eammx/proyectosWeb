@@ -1,0 +1,22 @@
+{# empty Twig template #}
+{% extends '::base.html.twig' %}
+{# funcion asset envia la redireccion a la carpeta web del proyecto #}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/alumnos/css/main.css')}}"/>
+{% endblock %}
+
+{% block body %}
+    <div id="pagina" class="cfix">
+        <div id="contenido">
+            {% block contenido%}
+                Contenido
+            {% endblock%}
+        </div>
+        <div id="menu">
+            {% block menu%}                
+                <img src="{{ asset('bundles/alumnos/images/opensource.png')}}"height="50" width="50"/>
+                Menu
+            {% endblock%}
+        </div>     
+    </div>            
+{% endblock%}

@@ -1,0 +1,12 @@
+{% extends 'ernestoalumnosBundle::main.html.twig' %}
+{% block contenido %}
+    <h1>Listado de alumnos</h1>
+    {% for alumno in alumnos %}
+        <a href="{{path('ernestoalumnos_alumno',{'matricula':alumno.matricula})}}" class="fila {{cycle(["par","impar"], loop.index)}}">
+            {{alumno.matricula}} - {{alumno.nombre}}
+        </a><br/>
+    {% endfor%}
+{% endblock %}
+{% block menu%}
+    {{parent()}} -Mi nuevo menu
+{% endblock%}

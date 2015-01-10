@@ -1,0 +1,12 @@
+ernestoalumnos_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ernestoalumnosBundle:Default:index }
+ernestoalumnos_alumnos:
+    path:     /alumnos/
+    defaults: { _controller: ernestoalumnosBundle:Default:alumnos }
+ernestoalumnos_alumno:
+    path:     /alumno/{matricula}
+    defaults: { _controller: ernestoalumnosBundle:Default:alumno }
+ernestoalumnos_ejemplos:
+    path:     /ejemplos/
+    defaults: { _controller: ernestoalumnosBundle:Default:ejemplos }    

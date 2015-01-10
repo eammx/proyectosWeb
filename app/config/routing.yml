@@ -1,0 +1,8 @@
+ernestoalumnos:
+    resource: "@ernestoalumnosBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

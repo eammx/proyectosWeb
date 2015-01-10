@@ -1,0 +1,8 @@
+{% extends 'ernestoalumnosBundle::main.html.twig' %}
+{% block title %}
+    Vista de alumno {{alumno.nombre}}
+{% endblock %}
+{% block contenido %}
+    <h1>Detalles del alumno</h1>
+    <div>{{alumno.matricula}} - {{alumno.nombre}}</div>
+{% endblock %}
